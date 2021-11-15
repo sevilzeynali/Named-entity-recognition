@@ -17,8 +17,8 @@ from sklearn.metrics import accuracy_score,f1_score
 import mlflow
 import mlflow.keras
 import mlflow.tensorflow
-
-df = pd.read_csv("C:/Users/Sevil/Desktop/datascientest/data_sets/NER/ner_dataset.csv", encoding="latin1")
+#this data set is available on Kaggle :https://www.kaggle.com/abhinavwalia95/entity-annotated-corpus
+df = pd.read_csv("ner_dataset.csv", encoding="latin1")
 df = df.fillna(method="ffill")
 df.head()
 
